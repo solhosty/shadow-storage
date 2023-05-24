@@ -1,0 +1,18 @@
+{
+  "name": "shadow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@shadow-drive/sdk": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3"
+  }
+}
