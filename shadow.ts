@@ -12,10 +12,10 @@ async function main() {
     );    const wallet = new anchor.Wallet(keypair);
     const drive = await new ShdwDrive(connection, wallet).init(); 
     const accts = await drive.getStorageAccounts("v2");
-    const fileBuff = fs.readFileSync("./qudo.gif");
+    const fileBuff = fs.readFileSync("./helius.txt");
     let acctPubKey = new anchor.web3.PublicKey(accts[0].publicKey);
     const fileToUpload: typeof ShadowFile = {
-    name: "qudo.gif",
+    name: "helius.txt",
     file: fileBuff,
     };
     const uploadFile = await drive.uploadFile(acctPubKey, fileToUpload);
